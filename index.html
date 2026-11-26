@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="AI와 함께 쓰는 나의 첫 영어동화 — 2026 성과발표회 발표자료, 영상, 웹앱 모음">
+<meta property="og:title" content="AI와 함께 쓰는 나의 첫 영어동화">
+<meta property="og:description" content="2026 성과발표회 · 발표자료 · 축하영상 · 작별영상 · 웹앱">
+<meta property="og:image" content="https://kuro095-gif.github.io/english-story-studio/covers/c01.jpg">
+<title>English Story Studio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;1,400&family=Gowun+Batang:wght@400;700&family=Gowun+Dodum&display=swap">
+<style>
+html{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+body{margin:0}
+img{max-width:100%}
+/* Layout: a storybook front matter — title page, then a "contents" of four doors, then the slide index and the bookshelf. */
+:root {
+  --bg: #F7F1E3;
+  --bg-2: #EFE6D2;
+  --card: #FBF8F0;
+  --line: #E2D6B8;
+  --ink: #2B3530;
+  --ink-soft: #4A554D;
+  --head: #1F3D30;
+  --accent: #2E5A45;
+  --on-accent: #F3E9CF;
+  --gold: #8A6519;
+  --gold-soft: #C99A3B;
+  --shelf: #C9B48A;
+  --shadow: rgba(31, 61, 48, 0.16);
+  --f-display: 'Gowun Batang', 'Nanum Myeongjo', Georgia, serif;
+  --f-body: 'Gowun Dodum', 'Apple SD Gothic Neo', 'Malgun Gothic', system-ui, sans-serif;
+  --f-latin: 'Fraunces', Georgia, serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #15241D; --bg-2: #1B2E25; --card: #20362B; --line: #33503F;
+    --ink: #E6E0CF; --ink-soft: #C3C9BC; --head: #F1E7CB; --accent: #D9B25C;
+    --on-accent: #1A2A22; --gold: #E0B85A; --gold-soft: #C99A3B; --shelf: #5E4E2C;
+    --shadow: rgba(0, 0, 0, 0.4); color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #15241D; --bg-2: #1B2E25; --card: #20362B; --line: #33503F;
+  --ink: #E6E0CF; --ink-soft: #C3C9BC; --head: #F1E7CB; --accent: #D9B25C;
+  --on-accent: #1A2A22; --gold: #E0B85A; --gold-soft: #C99A3B; --shelf: #5E4E2C;
+  --shadow: rgba(0, 0, 0, 0.4); color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--f-body);
+  font-size: 17px;
+  line-height: 1.6;
+  word-break: keep-all;
+}
+.wrap {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+a { color: inherit; }
+a:focus-visible, button:focus-visible { outline: 3px solid var(--gold-soft); outline-offset: 3px; border-radius: 8px; }
+
+/* hero */
+.hero { padding-block: 56px 40px; display: grid; grid-template-columns: 1fr auto; gap: 40px; align-items: center; }
+.eyebrow { font-family: var(--f-latin); font-style: italic; color: var(--gold); font-size: 18px; margin: 0 0 10px; }
+h1 {
+  font-family: var(--f-display); font-weight: 700; color: var(--head);
+  font-size: clamp(36px, 7vw, 60px); line-height: 1.18; margin: 0 0 18px; text-wrap: balance;
+}
+.rule { width: 72px; height: 5px; border-radius: 3px; background: var(--gold-soft); margin: 0 0 18px; }
+.sub { font-family: var(--f-display); font-size: clamp(19px, 2.6vw, 24px); color: var(--accent); margin: 0 0 14px; line-height: 1.4; }
+.meta { margin: 0; color: var(--ink-soft); font-size: 16px; }
+.fan { position: relative; width: 300px; height: 250px; }
+.fan img {
+  position: absolute; width: 170px; height: 170px; object-fit: cover; border-radius: 10px;
+  box-shadow: 0 12px 26px var(--shadow); border: 4px solid var(--card);
+}
+.fan img:nth-child(1) { left: 0; top: 54px; transform: rotate(-8deg); }
+.fan img:nth-child(2) { left: 120px; top: 0; transform: rotate(5deg); }
+.fan img:nth-child(3) { left: 88px; top: 92px; transform: rotate(-2deg); }
+
+/* section heads */
+.sec { padding-block: 28px; }
+.sec-head { display: flex; align-items: baseline; gap: 12px; margin: 0 0 18px; flex-wrap: wrap; }
+h2 { font-family: var(--f-display); font-weight: 700; color: var(--head); font-size: 28px; margin: 0; }
+.sec-note { color: var(--ink-soft); font-size: 15px; }
+
+/* four doors */
+.doors { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.door {
+  display: flex; flex-direction: column; gap: 10px;
+  background: var(--card); border: 2px solid var(--line); border-radius: 20px;
+  padding: 24px; text-decoration: none; min-width: 0;
+  transition: transform .18s ease, border-color .18s ease;
+}
+.door:hover { transform: translateY(-3px); border-color: var(--gold-soft); }
+.door-top { display: flex; align-items: center; gap: 14px; }
+.door-icon {
+  flex: none; width: 52px; height: 52px; border-radius: 14px;
+  display: grid; place-items: center; background: var(--bg-2); color: var(--accent);
+}
+.door-icon svg { width: 28px; height: 28px; }
+.door-kicker { font-family: var(--f-latin); font-style: italic; color: var(--gold); font-size: 15px; margin: 0; }
+.door h3 { font-family: var(--f-display); font-weight: 700; color: var(--head); font-size: 23px; margin: 0; line-height: 1.3; }
+.door p.desc { margin: 0; color: var(--ink-soft); font-size: 16px; }
+.door .go {
+  margin-top: auto; align-self: flex-start;
+  background: var(--accent); color: var(--on-accent);
+  padding: 9px 18px; border-radius: 999px; font-size: 15px;
+}
+.door.main { grid-column: 1 / -1; background: var(--accent); border-color: var(--accent); }
+.door.main h3, .door.main .door-kicker { color: var(--on-accent); }
+.door.main p.desc { color: var(--on-accent); opacity: .9; }
+.door.main .door-icon { background: rgba(255,255,255,.12); color: var(--on-accent); }
+.door.main .go { background: var(--on-accent); color: var(--accent); }
+
+.code-row { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-top: 4px; }
+.code {
+  font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace; font-size: 18px; letter-spacing: .06em;
+  background: var(--bg-2); color: var(--head); padding: 6px 12px; border-radius: 8px; user-select: all;
+}
+.copy {
+  font: inherit; font-size: 14px; cursor: pointer; border-radius: 999px; padding: 6px 14px;
+  border: 1.5px solid var(--line); background: transparent; color: var(--ink);
+}
+
+/* slide index */
+.chapters { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.chapter { background: var(--card); border: 2px solid var(--line); border-radius: 18px; padding: 18px 20px; min-width: 0; }
+.chapter h3 { font-family: var(--f-display); font-size: 18px; color: var(--gold); margin: 0 0 8px; font-weight: 700; }
+.chapter ol { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; }
+.chapter a {
+  display: flex; gap: 12px; align-items: baseline; text-decoration: none;
+  padding: 7px 8px; border-radius: 10px; color: var(--ink);
+}
+.chapter a:hover { background: var(--bg-2); }
+.pg { font-family: var(--f-latin); font-weight: 600; color: var(--gold); width: 22px; text-align: right; flex: none; font-variant-numeric: tabular-nums; }
+
+/* shelves */
+.shelf-label { font-family: var(--f-display); font-weight: 700; color: var(--head); font-size: 19px; margin: 18px 0 10px; }
+.shelf {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 14px;
+  padding-bottom: 12px; border-bottom: 8px solid var(--shelf); margin: 0;
+}
+.book { margin: 0; min-width: 0; }
+.book img { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 8px; box-shadow: 0 8px 16px var(--shadow); display: block; }
+.book figcaption { font-family: var(--f-latin); font-size: 14px; line-height: 1.3; color: var(--ink-soft); margin-top: 8px; }
+
+/* footer */
+footer { padding-block: 36px 56px; text-align: center; color: var(--ink-soft); }
+.closing { font-family: var(--f-display); font-weight: 700; color: var(--head); font-size: 24px; margin: 0 0 6px; }
+footer p { margin: 0; }
+
+@media (max-width: 720px) {
+  .hero { grid-template-columns: 1fr; padding-block: 36px 16px; }
+  .fan { width: 260px; height: 200px; margin: 0 auto; }
+  .fan img { width: 140px; height: 140px; }
+  .fan img:nth-child(2) { left: 110px; }
+  .fan img:nth-child(3) { left: 70px; top: 70px; }
+  .doors, .chapters { grid-template-columns: 1fr; }
+}
+@media (prefers-reduced-motion: reduce) { .door { transition: none; } .door:hover { transform: none; } }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header class="hero">
+    <div>
+      <p class="eyebrow">English Story Studio · 2026 성과발표회</p>
+      <h1>AI와 함께 쓰는<br>나의 첫 영어동화</h1>
+      <div class="rule"></div>
+      <p class="sub">초중등영어교과연구회 AI영어동화제작 웹앱</p>
+      <p class="meta">2026. 12. 2.(수) 순천 에코그라드 호텔 · 순천청암고등학교 유재현</p>
+    </div>
+    <div class="fan" aria-hidden="true">
+      <img src="covers/c01.jpg" alt="">
+      <img src="covers/c08.jpg" alt="">
+      <img src="covers/c04.jpg" alt="">
+    </div>
+  </header>
+
+  <section class="sec" aria-labelledby="h-doors">
+    <div class="sec-head"><h2 id="h-doors">오늘의 자료</h2><span class="sec-note">보고 싶은 것을 누르세요</span></div>
+    <div class="doors">
+      <a class="door main" href="https://claude.ai/artifact/88f76gFRUcnviKgi4SMVRW" target="_blank" rel="noopener">
+        <div class="door-top">
+          <span class="door-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></span>
+          <div><p class="door-kicker">Slides</p><h3>발표자료 보기</h3></div>
+        </div>
+        <p class="desc">슬라이드 12장. 발표 화면과 같은 자료를 내 휴대폰에서 넘겨 볼 수 있습니다.</p>
+        <span class="go">발표자료 열기</span>
+      </a>
+
+      <a class="door" href="https://youtu.be/XL50BhR_Rzk" target="_blank" rel="noopener">
+        <div class="door-top">
+          <span class="door-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m10 8 6 4-6 4z" fill="currentColor"/></svg></span>
+          <div><p class="door-kicker">Video 1</p><h3>영어동화연구회 축하영상</h3></div>
+        </div>
+        <p class="desc">유튜브에서 재생됩니다.</p>
+        <span class="go">영상 보기</span>
+      </a>
+
+      <a class="door" href="https://youtu.be/97pDZpnxAC4" target="_blank" rel="noopener">
+        <div class="door-top">
+          <span class="door-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m10 8 6 4-6 4z" fill="currentColor"/></svg></span>
+          <div><p class="door-kicker">Video 2</p><h3>영어동화연구회 작별영상</h3></div>
+        </div>
+        <p class="desc">유튜브에서 재생됩니다.</p>
+        <span class="go">영상 보기</span>
+      </a>
+
+      <div class="door" style="grid-column: 1 / -1;">
+        <div class="door-top">
+          <span class="door-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4h7a3 3 0 0 1 3 3v13a2 2 0 0 0-2-2H2z"/><path d="M22 4h-7a3 3 0 0 0-3 3v13a2 2 0 0 1 2-2h8z"/></svg></span>
+          <div><p class="door-kicker">Web App</p><h3>웹앱 직접 들어가 보기</h3></div>
+        </div>
+        <p class="desc">학생들이 쓴 바로 그 화면입니다. 시작 화면에서 아래 수업 코드를 넣으면 체험할 수 있습니다.</p>
+        <div class="code-row">
+          <span class="code" id="class-code">7953E89F75</span>
+          <button class="copy" id="copy-btn" type="button">코드 복사</button>
+        </div>
+        <a class="go" href="https://script.google.com/macros/s/AKfycbx-n9SPLDlENlNjT2_uwUW29BBiYj7FPo08uun1xkwldW28tKtaQOlbHMcJsSWKHtgk/exec" target="_blank" rel="noopener">웹앱 열기</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="h-index">
+    <div class="sec-head"><h2 id="h-index">슬라이드 바로가기</h2><span class="sec-note">누르면 그 장부터 열립니다</span></div>
+    <div class="chapters" id="chapters"></div>
+  </section>
+
+  <section class="sec" aria-labelledby="h-shelf">
+    <div class="sec-head"><h2 id="h-shelf">학생 작품 10편</h2><span class="sec-note">모두 여섯 장을 끝까지 채운 작품</span></div>
+    <p class="shelf-label">우리 학교·진로 이야기</p>
+    <div class="shelf" id="shelf-a"></div>
+    <p class="shelf-label">상상 이야기</p>
+    <div class="shelf" id="shelf-b"></div>
+  </section>
+
+  <footer>
+    <p class="closing">작은 생각, 여섯 장의 이야기</p>
+    <p>수업 코드 발급은 초중등영어교과연구회로 문의해 주세요.</p>
+  </footer>
+</div>
+
+<script>
+(function () {
+  var DECK = 'https://claude.ai/artifact/88f76gFRUcnviKgi4SMVRW';
+  var chapters = [
+    ['왜 만들었나', [[1, '표지'], [2, '영어동화 만들기, 왜 끝까지 못 갔을까?'], [3, '왜 지금까지 이런 웹앱은 실패했나?']]],
+    ['웹앱은 이렇게 작동합니다', [[4, '웹앱 한눈에'], [5, '등장인물을 먼저 정하면, 여섯 장이 한 사람으로'], [6, '그림과 문장을 합쳐 한 권으로'], [7, '선생님은 시트 하나로']]],
+    ['교실 현장과 학생 작품', [[8, '연구회에서 교실로'], [9, '성공작 모음'], [10, 'A Christmas of Sharing']]],
+    ['돌아보기', [[11, '성과와 개선점'], [12, '마무리 · Q&A']]]
+  ];
+  var box = document.getElementById('chapters');
+  chapters.forEach(function (c) {
+    var div = document.createElement('div'); div.className = 'chapter';
+    var h = document.createElement('h3'); h.textContent = c[0]; div.appendChild(h);
+    var ol = document.createElement('ol');
+    c[1].forEach(function (s) {
+      var li = document.createElement('li'); var a = document.createElement('a');
+      a.href = DECK + '#slide-' + s[0]; a.target = '_blank'; a.rel = 'noopener';
+      var n = document.createElement('span'); n.className = 'pg'; n.textContent = s[0];
+      var t = document.createElement('span'); t.textContent = s[1];
+      a.appendChild(n); a.appendChild(t); li.appendChild(a); ol.appendChild(li);
+    });
+    div.appendChild(ol); box.appendChild(div);
+  });
+
+  function shelf(id, books) {
+    var el = document.getElementById(id);
+    books.forEach(function (b) {
+      var f = document.createElement('figure'); f.className = 'book';
+      var img = document.createElement('img'); img.src = 'covers/' + b[0] + '.jpg'; img.alt = b[1] + ' 표지'; img.loading = 'lazy';
+      var cap = document.createElement('figcaption'); cap.textContent = b[1];
+      f.appendChild(img); f.appendChild(cap); el.appendChild(f);
+    });
+  }
+  shelf('shelf-a', [['c01', 'A Christmas of Sharing'], ['c02', 'Caring for People and the Planet'], ['c03', 'A Taste of the World'], ['c04', 'The Garden That Changed the World'], ['c05', 'A Sky Full of Friends'], ['c06', 'Saekdong Wings Around the World']]);
+  shelf('shelf-b', [['c07', 'Yeeun and Her Many Powers'], ['c08', "Luna's Hidden Light"], ['c09', "The Beautiful Lady's Tiring Day"], ['c10', 'Suyeon in Kitty Village']]);
+
+  var btn = document.getElementById('copy-btn');
+  btn.addEventListener('click', function () {
+    var code = document.getElementById('class-code');
+    function done() { btn.textContent = '복사됨'; setTimeout(function () { btn.textContent = '코드 복사'; }, 1800); }
+    function fallback() { var r = document.createRange(); r.selectNodeContents(code); var s = getSelection(); s.removeAllRanges(); s.addRange(r); btn.textContent = '길게 눌러 복사'; }
+    try { navigator.clipboard.writeText(code.textContent).then(done, fallback); } catch (e) { fallback(); }
+  });
+})();
+</script>
+</body>
+</html>
